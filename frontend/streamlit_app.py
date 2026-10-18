@@ -42,7 +42,7 @@ with st.sidebar:
                 st.error(f"Backend request failed: {exc}")
 
 st.subheader("Analyse a document")
-uploaded = st.file_uploader("Choose a legal document", type=["pdf(Only if present in text form)", "txt", "html", "docx"], help="Files are processed by your local backend. Scanned PDFs need OCR, which this starter version does not yet include.")
+uploaded = st.file_uploader("Choose a legal document", type=["pdf", "txt", "html", "docx"], help="Files are processed by your local backend. Scanned PDFs need OCR, which this starter version does not yet include.")
 question = st.text_input("What would you like to understand?", value="Summarise the document and identify obligations, deadlines, termination terms, and points worth clarifying.")
 if st.button("Analyse locally", type="primary", disabled=uploaded is None):
     if not question.strip():
