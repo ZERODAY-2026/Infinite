@@ -16,7 +16,7 @@ A starter implementation for preliminary document understanding. It extracts a l
 
 - Python 3.10+ (Python 3.11 recommended)
 - Ollama installed and running
-- Your Gemma model installed
+- Your Gemma4:e4b model installed
 
 Check the exact local model tags:
 
@@ -28,7 +28,7 @@ ollama ps
 Pull the embedding model once during setup:
 
 ```bash
-ollama pull embeddinggemma
+ollama pull embeddinggemma gemma4:e4b
 ```
 
 Model downloads happen during setup. Normal analysis should work without internet when the model and dependencies are already present.
