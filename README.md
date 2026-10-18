@@ -1,10 +1,11 @@
-# Private Legal Document Triage Agent (local Ollama + Gemma + FastAPI + Streamlit)
+# Private Legal Document Triage Agent (PS2 — Agentic AI: Private Legal Document Triage Agent )
 
 A starter implementation for preliminary document understanding. It extracts a local document, retrieves semantically relevant passages from a local legal-source folder, and asks a locally running Gemma model to produce a structured summary and potential concerns. It is **not legal advice** and does not decide validity or enforceability.
 
 ## Important scope and limitations
 
 - The default source folder is `/home/govardhan/rental-legal-ai/legal_sources/india_central` (configurable). This is read from your computer at runtime; its contents are not included in this repository/archive.
+- Only for Legal Rental Documents
 - Supported source/upload formats: PDF, TXT, Markdown, HTML, DOCX. Scanned PDFs need OCR; OCR is not included yet.
 - The legal index is a local vector index built using `embeddinggemma`. Gemma is used meaningfully for document analysis.
 - Retrieval similarity is not a probability of legal applicability. Always verify the source text, currency, jurisdiction, and applicability.
