@@ -121,6 +121,10 @@ curl -X POST http://127.0.0.1:8000/sources/search \
   -d '{"query":"termination notice period for a tenancy","top_k":5}'
 ```
 
+## Architecture diagram
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/71f76047-7dc9-4e03-857f-db8a2225c860" />
+
+
 ## API endpoints
 
 - `GET /health` — API, Ollama, model and index status
